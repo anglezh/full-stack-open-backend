@@ -1,7 +1,10 @@
-DELETE http://localhost:3001/api/persons/3
-###
 GET http://localhost:3001/api/persons
 
+###
+GET http://localhost:3001/api/persons/63a3f6ad6def3ea2f14496dd
+
+###
+DELETE http://localhost:3001/api/persons/63a52fbb65b38f733c512c41
 ###
 POST http://localhost:3001/api/persons
 Content-Type: application/json
@@ -16,5 +19,13 @@ Content-Type: application/json
 
 {
     "name":"zhaoling",
+    "number": 18666668888
+}
+###
+PUT http://localhost:3001/api/persons/update
+Content-Type: application/json
+
+{
+    "id":"63a3fa313025199f22c812a0",
     "number": 18666668888
 }
